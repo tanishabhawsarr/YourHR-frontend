@@ -16,10 +16,10 @@ const CategoryCarousel = () => {
     <div>
        <Carousel className="w-full max-w-xl mx-auto my-20">
        
-        <CarouselContent>
+        <CarouselContent className="md:basis-1/2 lg:basis-1/3 sm:basis-1/4 sm:mx-auto ">
         {
             category.map((cat,index)=>(
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 sm:basis-1/4">
                     <Button variant="outline">{cat}</Button>
                 </CarouselItem>
             ))
